@@ -91,32 +91,33 @@ Depending on the manufacturer, the Dev Kit C might require the user to press and
 *	Navigate back up the page to the HTTP Payload Decoder section. 
 *	Copy and paste the following code into the code editor, replacing any existing code: 
        
-        function Decoder(request) {
-        var data = JSON.parse(request.body);
-        var device = data.device;
+        function Decoder(request) 
+        {
+            var data = JSON.parse(request.body);
+            var device = data.device;
 
-        var decoded = {};
-        decoded.temp1 = data.body.temp1;
-        decoded.sound = data.body.sound;
-        decoded.time = data.when;
+            var decoded = {};
+            decoded.temp1 = data.body.temp1;
+            decoded.sound = data.body.sound;
+            decoded.time = data.when;
 
-        return [
-            {
-                device: device,
-                field: "TEMP_1",
-                value:decoded.temp1
-            },
-            {
-                device: device,
-                field: "SOUND",
-                value:decoded.sound
-            },
-            {
-                device: device,
-                field: "TIME",
-                value: decoded.time
-            }
-        ];
-    } 
+            return [
+                {
+                    device: device,
+                    field: "TEMP_1",
+                    value:decoded.temp1
+                },
+                {
+                    device: device,
+                    field: "SOUND",
+                    value:decoded.sound
+                },
+                {
+                    device: device,
+                    field: "TIME",
+                    value: decoded.time
+                }
+            ];
+        } 
 
 
