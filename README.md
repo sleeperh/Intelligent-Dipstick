@@ -82,3 +82,43 @@ Depending on the manufacturer, the Dev Kit C might require the user to press and
   * choose the Project you created when setting up Notehub. 
   * Then, choose Devices from the menu on the left and copy the Device UID
 ![](docs/img/Picture7.jpg)
+
+*	Back on the Datacake device creation screen, paste your Device UID in the Serial Number field and provide a name to label the device. 
+*	Choose the free plan, you can upgrade later
+*	Once you have created your Datacake device, you should be redirected to an overview of your Datacake devices. Click on the newly created device and open the device view. 
+*	Choose the Configuration tab to configure the device 
+*	Look for the Fields section and click on Add Fields. This will allow you to  create numerous database fields to hold data that comes from Notehub. Add one called Temp 1 with Identifier TEMP_1; Time, with Identifier TIME; and, Sound, with Identifier SOUND. All fields should be of type Float. 
+*	Navigate back up the page to the HTTP Payload Decoder section. 
+*	Copy and paste the following code into the code editor, replacing any existing code: 
+    var specificLanguage_code = 
+    {
+        function Decoder(request) {
+    var data = JSON.parse(request.body);
+    var device = data.device;
+    
+    var decoded = {};
+    decoded.temp1 = data.body.temp1;
+    decoded.sound = data.body.sound;
+    decoded.time = data.when;
+
+    return [
+        {
+            device: device,
+            field: "TEMP_1",
+            value:decoded.temp1
+        },
+        {
+            device: device,
+            field: "SOUND",
+            value:decoded.sound
+        },
+        {
+            device: device,
+            field: "TIME",
+            value: decoded.time
+        }
+    ];
+} 
+
+        }
+    }
