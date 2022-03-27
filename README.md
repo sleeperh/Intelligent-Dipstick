@@ -50,7 +50,7 @@ Follow the on-screen installation instructions
 ### Prepare Blues Wireless Notecard
 1.	Please follow the instructions found [here](https://dev.blues.io/quickstart/notecard-quickstart/notecarrier-af/#before-you-begin) on the Blues Wireless Developer site for directions on installing the Blues Wireless Notecard onto the Blues Wireless Notecarrier-AF. 
 2.	Once the Notecarrier is assembled use the instructions found [here](https://dev.blues.io/quickstart/notecard-quickstart/notecarrier-af/#set-up-notehub) to create a Notehub Project and obtain a ProductUID. 
-  *	Save the ProductUID for use later in this project. 
+    *	Save the ProductUID for use later in this project. 
 
 ### Installing Arduino Libraries
 *	Go to the Arduino IDE Tools menu, then choose Manage Libraries
