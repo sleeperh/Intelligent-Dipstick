@@ -45,3 +45,18 @@ Choose CP210x Universal Windows Driver from the options.
 
 ![](docs/img/Picture2.jpg)
 
+Extract the downloaded zip file into a location of your choosing and within that folder open CP210xVCPInstaller_x64.exe (this assumes you are using a 64-bit computer, otherwise choose the …_x86 option)
+Follow the on-screen installation instructions
+
+### Prepare Blues Wireless Notecard
+•	Please follow the instructions found [here](https://dev.blues.io/quickstart/notecard-quickstart/notecarrier-af/#before-you-begin) on the Blues Wireless Developer site for directions on installing the Blues Wireless Notecard onto the Blues Wireless Notecarrier-AF. 
+•	Once the Notecarrier is assembled use the instructions found [here](https://dev.blues.io/quickstart/notecard-quickstart/notecarrier-af/#set-up-notehub) to create a Notehub Project and obtain a ProductUID. 
+•	Save the ProductUID for use later in this project. 
+
+### Installing Arduino Libraries
+*	Go to the Arduino IDE Tools menu, then choose Manage Libraries
+*	Search for "Blues" in the input box and click the Install button next to the "Blues Wireless Notecard" result.
+*	Search for MAX6675 and install the library by Yurri Salimov
+*	Search for NimBLE and install the library by h2zero
+
+
