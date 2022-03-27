@@ -120,4 +120,14 @@ Depending on the manufacturer, the Dev Kit C might require the user to press and
             ];
         } 
 
+*	Navigate to the HTTP Endpoint URL and copy it
+*	Back in Notehub, click on Routes in your Projects menu to the left and then click Create Route on the top right corner of the webpage. 
+*	Select the General HTTP/HTTPS Request/Response route type
+*	Provide a name for the route and paste the HTTP Endpoint URL for the URL
+*	In the Notefiles dropdown, choose Select Notefiles and choose sensors.qo
+*	Then, click Create Route to save the route
+*	Back in Datacake, choose Devices from the menu on the right and select your device from the list in the center of the screen. 
+*	Go to the Dashboard tab and click the toggle button to enable editing for your dashboard
+*	Click Add Widget
 
+![](docs/img/Picture8.png)
