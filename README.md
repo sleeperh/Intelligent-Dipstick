@@ -76,19 +76,19 @@ Depending on the manufacturer, the Dev Kit C might require the user to press and
 4. Click on the Devices from the menu on the left of the dashboard, then click the blue button on the right hand of the dashboard called Add Device. 
 
 ![](docs/img/Picture5.png)
-* Choose the API device type, then select New Product and provide a Product Name
-* In a separate window, go to sign into Blues Notehub and
+5. Choose the API device type, then select New Product and provide a Product Name
+6. In a separate window, go to sign into Blues Notehub and
   * choose the Project you created when setting up Notehub. 
   * Then, choose Devices from the menu on the left and copy the Device UID
 ![](docs/img/Picture7.jpg)
 
-*	Back on the Datacake device creation screen, paste your Device UID in the Serial Number field and provide a name to label the device. 
-*	Choose the free plan, you can upgrade later
-*	Once you have created your Datacake device, you should be redirected to an overview of your Datacake devices. Click on the newly created device and open the device view. 
-*	Choose the Configuration tab to configure the device 
-*	Look for the Fields section and click on Add Fields. This will allow you to  create numerous database fields to hold data that comes from Notehub. Add one called Temp 1 with Identifier TEMP_1; Time, with Identifier TIME; and, Sound, with Identifier SOUND. All fields should be of type Float. 
-*	Navigate back up the page to the HTTP Payload Decoder section. 
-*	Copy and paste the following code into the code editor, replacing any existing code: 
+7.	Back on the Datacake device creation screen, paste your Device UID in the Serial Number field and provide a name to label the device. 
+8.	Choose the free plan, you can upgrade later
+9.	Once you have created your Datacake device, you should be redirected to an overview of your Datacake devices. Click on the newly created device and open the device view. 
+10.	Choose the Configuration tab to configure the device 
+11.	Look for the Fields section and click on Add Fields. This will allow you to  create numerous database fields to hold data that comes from Notehub. Add one called Temp 1 with Identifier TEMP_1; Time, with Identifier TIME; and, Sound, with Identifier SOUND. All fields should be of type Float. 
+12.	Navigate back up the page to the HTTP Payload Decoder section. 
+13.	Copy and paste the following code into the code editor, replacing any existing code: 
        
         function Decoder(request) 
         {
@@ -119,23 +119,23 @@ Depending on the manufacturer, the Dev Kit C might require the user to press and
             ];
         } 
 
-*	Navigate to the HTTP Endpoint URL and copy it
-*	Back in Notehub, click on Routes in your Projects menu to the left and then click Create Route on the top right corner of the webpage. 
-*	Select the General HTTP/HTTPS Request/Response route type
-*	Provide a name for the route and paste the HTTP Endpoint URL for the URL
-*	In the Notefiles dropdown, choose Select Notefiles and choose sensors.qo
-*	Then, click Create Route to save the route
-*	Back in Datacake, choose Devices from the menu on the right and select your device from the list in the center of the screen. 
-*	Go to the Dashboard tab and click the toggle button to enable editing for your dashboard
-*	Click Add Widget
+14.	Navigate to the HTTP Endpoint URL and copy it
+15.	Back in Notehub, click on Routes in your Projects menu to the left and then click Create Route on the top right corner of the webpage. 
+16.	Select the General HTTP/HTTPS Request/Response route type
+17.	Provide a name for the route and paste the HTTP Endpoint URL for the URL
+18.	In the Notefiles dropdown, choose Select Notefiles and choose sensors.qo
+19.	Then, click Create Route to save the route
+20.	Back in Datacake, choose Devices from the menu on the right and select your device from the list in the center of the screen. 
+21.	Go to the Dashboard tab and click the toggle button to enable editing for your dashboard
+22.	Click Add Widget
 
 ![](docs/img/Picture8.png)
 
-*	Choose Chart from the list and create a Title in the Basic tab. 
-*	Within the Data tab, click Add Field and choose Temp 1 from the Field drop down and then click the Save button
-*	Click Add Widget again and choose Value 
-*	Select Current Value in the Timeframe tab
-*	Within the Basics tab, create a title for the widget such as Temperature Chart
-*	Within the Data tab, select Temp 1 from the Field drop down and click Save
+23.	Choose Chart from the list and create a Title in the Basic tab. 
+24.	Within the Data tab, click Add Field and choose Temp 1 from the Field drop down and then click the Save button
+25.	Click Add Widget again and choose Value 
+26.	Select Current Value in the Timeframe tab
+27.	Within the Basics tab, create a title for the widget such as Temperature Chart
+28.	Within the Data tab, select Temp 1 from the Field drop down and click Save
 
 Now the setup should be complete. Find a good power source and power the ESP Dev Kit C via its micro USB port. Power the Blues Wireless Notecard via the micro USB port directly on the Notecarrier-AF – not the port of the ESP32 Feather. 
