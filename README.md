@@ -1,12 +1,13 @@
 # Intelligent Dipstick
  
-##Getting Started
-###Download and Install Source Code
+## Getting Started
+
+### Download and Install Source Code
 1. Download the project zip and extract it in a folder of your choice. 
 2. Within the Intelligent-Dipstick-main/src folder are two subfolders: Capstone_Sensors and Capstone_Gateway. Move Capstone_Sensors and Capstone_Gateway folders to the computer's Arduino folder, typically C:\Users\YourUserName\Documents\Arduino
 3. Follow the rest of the instructions outlined below
 
-###Parts Needed
+### Parts Needed
 *1 ESP32 Dev Kit C v4
 *1 Screw Terminal Block Breakout Board for ES32 Dev Kit C
 *1 ESP32 Dev Kit C v4
