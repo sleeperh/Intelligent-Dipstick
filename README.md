@@ -8,8 +8,7 @@
 3. Follow the rest of the instructions outlined below
 
 ### Parts Needed
-* 1 ESP32 Dev Kit C v4
-* 1 Screw Terminal Block Breakout Board for ES32 Dev Kit C
+* 1 Blues Wireless NoteCarrier-AF with Notecard
 * 1 ESP32 Dev Kit C v4
 * 1 Screw Terminal Block Breakout Board for ES32 Dev Kit C
 * 2 green LED lights
