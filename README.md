@@ -39,4 +39,9 @@ The two separate URLs should be separated by a comma as shown and as it appears 
 This should open the Boards Manager window. 
 Search for ESP32 and press install button for the ESP32 by Espressif Systems. 
 
+3.	Go to [CP210x USB to UART Bridge VCP Drivers - Silicon Labs (silabs.com)](https://www.silabs.com/developers/usb-to-uart-bridge-vcp-drivers)
+Near the top of the webpage should be a hyperlink labeled Downloads. Click it!
+Choose CP210x Universal Windows Driver from the options. 
+
+![](docs/img/Picture2.jpg)
 
