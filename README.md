@@ -93,32 +93,33 @@ Depending on the manufacturer, the Dev Kit C might require the user to press and
     var specificLanguage_code = 
     {
         function Decoder(request) {
-    var data = JSON.parse(request.body);
-    var device = data.device;
-    
-    var decoded = {};
-    decoded.temp1 = data.body.temp1;
-    decoded.sound = data.body.sound;
-    decoded.time = data.when;
+        var data = JSON.parse(request.body);
+        var device = data.device;
 
-    return [
-        {
-            device: device,
-            field: "TEMP_1",
-            value:decoded.temp1
-        },
-        {
-            device: device,
-            field: "SOUND",
-            value:decoded.sound
-        },
-        {
-            device: device,
-            field: "TIME",
-            value: decoded.time
-        }
-    ];
-} 
+        var decoded = {};
+        decoded.temp1 = data.body.temp1;
+        decoded.sound = data.body.sound;
+        decoded.time = data.when;
 
-        }
+        return [
+            {
+                device: device,
+                field: "TEMP_1",
+                value:decoded.temp1
+            },
+            {
+                device: device,
+                field: "SOUND",
+                value:decoded.sound
+            },
+            {
+                device: device,
+                field: "TIME",
+                value: decoded.time
+            }
+        ];
+    } 
+
+
+        
     }
