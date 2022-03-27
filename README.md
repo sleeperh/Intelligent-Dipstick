@@ -27,5 +27,7 @@ Arduino’s IDE needs to be configured to compile its sketches appropriately for
 1.	First in the Arduino IDE, go to the File menu and choose Preferences 
 This should open a Preferences window. Within the Preferences window near the bottom, should be a text field labeled Additional Boards Manager URLs.
 Copy the next two lines into the text field and press OK.
-https://dl.espressif.com/dl/package_esp32_index.json, https://raw.githubusercontent.com/espressif/arduino-esp32/gh-pages/package_esp32_index.json
-(docs/img/Picture1.jpg)
+
+https://dl.espressif.com/dl/package_esp32_index.json, 
+https://raw.githubusercontent.com/espressif/arduino-esp32/gh-pages/package_esp32_index.json
+![](docs/img/Picture1.jpg)
