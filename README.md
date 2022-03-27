@@ -67,3 +67,5 @@ To install Capstone_Sensors.ino onto the ESP32 Dev Kit C:
 4.	Within the Tools menu, choose Board menu, select ESP Arduino, and from that menu choose “ESP32 Dev Module” 
 5.	 Navigate to the Sketch menu in Arduino IDE and select the Upload option (alternatively press Ctrl+U). The program will compile and upload onto the ESP32 board. 
 
+Depending on the manufacturer, the Dev Kit C might require the user to press and hold the Boot button on the ESP32 board while Arduino IDE tries to connect to it. Release boot button when uploading proceeds.  
+![](docs/img/Picture3.jpg)![](docs/img/Picture4.jpg)
