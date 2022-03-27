@@ -30,4 +30,5 @@ Copy the next two lines into the text field and press OK.
 
 https://dl.espressif.com/dl/package_esp32_index.json, 
 https://raw.githubusercontent.com/espressif/arduino-esp32/gh-pages/package_esp32_index.json
+
 ![](docs/img/Picture1.jpg)
