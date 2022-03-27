@@ -76,4 +76,4 @@ Depending on the manufacturer, the Dev Kit C might require the user to press and
 3. Sign into the dashboard using your newly created credentials 
 4. Click on the Devices from the menu on the left of the dashboard, then click the blue button on the right hand of the dashboard called Add Device. 
 
-![](docs/img/Picture.png)
+![](docs/img/Picture5.png)
