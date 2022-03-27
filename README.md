@@ -32,3 +32,11 @@ https://dl.espressif.com/dl/package_esp32_index.json,
 https://raw.githubusercontent.com/espressif/arduino-esp32/gh-pages/package_esp32_index.json
 
 ![](docs/img/Picture1.jpg)
+
+The two separate URLs should be separated by a comma as shown and as it appears in this text. 
+
+2.	Next in the Arduino IDE, go to the Tools menu, choose Board, then go to Boards Manager…
+This should open the Boards Manager window. 
+Search for ESP32 and press install button for the ESP32 by Espressif Systems. 
+
+
