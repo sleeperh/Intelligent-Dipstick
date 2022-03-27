@@ -69,3 +69,11 @@ To install Capstone_Sensors.ino onto the ESP32 Dev Kit C:
 
 Depending on the manufacturer, the Dev Kit C might require the user to press and hold the Boot button on the ESP32 board while Arduino IDE tries to connect to it. Release boot button when uploading proceeds.  
 ![](docs/img/Picture3.jpg)![](docs/img/Picture4.jpg)
+
+### Routing from Notehub to Datacake
+1. Create a [Datacake](https://app.datacake.de/signup) account
+2. After creating an account, you should be redirected to your workspace. If you do not get redirected, go to [Datacake](https://datacake.co/)’s main site and click on the Dashboard button at the top right hand corner of the webpage. 
+3. Sign into the dashboard using your newly created credentials 
+4. Click on the Devices from the menu on the left of the dashboard, then click the blue button on the right hand of the dashboard called Add Device. 
+
+![](docs/img/Picture4.jpg)
