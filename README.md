@@ -59,4 +59,11 @@ Follow the on-screen installation instructions
 *	Search for MAX6675 and install the library by Yurri Salimov
 *	Search for NimBLE and install the library by h2zero
 
+### Uploading Arduino Programs onto the ESP32 Dev Kit C v1 and Adafruit Feather
+To install Capstone_Sensors.ino onto the ESP32 Dev Kit C:
+1.	Connect the Dev Kit C to a USB port via micro-USB connector
+2.	Open Capstone_Sensors.ino in Arduino IDE
+3.	Navigate to the Tools menu in Arduino IDE, then choose Port and select the appropriate serial port associated with the newly connected Dev Kit C
+4.	Within the Tools menu, choose Board menu, select ESP Arduino, and from that menu choose “ESP32 Dev Module” 
+5.	 Navigate to the Sketch menu in Arduino IDE and select the Upload option (alternatively press Ctrl+U). The program will compile and upload onto the ESP32 board. 
 
