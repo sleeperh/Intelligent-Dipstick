@@ -90,9 +90,7 @@ Depending on the manufacturer, the Dev Kit C might require the user to press and
 *	Look for the Fields section and click on Add Fields. This will allow you to  create numerous database fields to hold data that comes from Notehub. Add one called Temp 1 with Identifier TEMP_1; Time, with Identifier TIME; and, Sound, with Identifier SOUND. All fields should be of type Float. 
 *	Navigate back up the page to the HTTP Payload Decoder section. 
 *	Copy and paste the following code into the code editor, replacing any existing code: 
-    var specificLanguage_code = 
-    {
-        
+       
         function Decoder(request) {
         var data = JSON.parse(request.body);
         var device = data.device;
