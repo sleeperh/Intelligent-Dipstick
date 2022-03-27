@@ -8,13 +8,13 @@
 3. Follow the rest of the instructions outlined below
 
 ### Parts Needed
-*1 ESP32 Dev Kit C v4
-*1 Screw Terminal Block Breakout Board for ES32 Dev Kit C
-*1 ESP32 Dev Kit C v4
-*1 Screw Terminal Block Breakout Board for ES32 Dev Kit C
-*2 green LED lights
-*2 red LED lights
-*4 220-ohm resistors 
-*1 MAX 6675 + K-Type Thermocouple
+* 1 ESP32 Dev Kit C v4
+* 1 Screw Terminal Block Breakout Board for ES32 Dev Kit C
+* 1 ESP32 Dev Kit C v4
+* 1 Screw Terminal Block Breakout Board for ES32 Dev Kit C
+* 2 green LED lights
+* 2 red LED lights
+* 4 220-ohm resistors 
+* 1 MAX 6675 + K-Type Thermocouple
 
 Refer to [Capstone Gateway Diagram.pdf](docs/Diagrams/Capstone Gateway Diagram.pdf)
