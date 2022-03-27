@@ -16,6 +16,6 @@
 * 2 red LED lights
 * 4 220-ohm resistors 
 * 1 MAX 6675 + K-Type Thermocouple
+* Varios jumper wires and breadboards as needed to make connections
 
-
-Refer to the [Gateway Diagram](docs/Diagrams/Capstone_Gateway_Diagram.pdf)
+Refer to the [Gateway Diagram](docs/Diagrams/Capstone_Gateway_Diagram.pdf) and [Sensor Diagram](docs/Diagrams/Capstone_Sensor_Diagram.pdf) as a guide to assemble the parts. 
