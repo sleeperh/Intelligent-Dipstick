@@ -131,3 +131,12 @@ Depending on the manufacturer, the Dev Kit C might require the user to press and
 *	Click Add Widget
 
 ![](docs/img/Picture8.png)
+
+*	Choose Chart from the list and create a Title in the Basic tab. 
+*	Within the Data tab, click Add Field and choose Temp 1 from the Field drop down and then click the Save button
+*	Click Add Widget again and choose Value 
+*	Select Current Value in the Timeframe tab
+*	Within the Basics tab, create a title for the widget such as Temperature Chart
+*	Within the Data tab, select Temp 1 from the Field drop down and click Save
+
+Now the setup should be complete. Find a good power source and power the ESP Dev Kit C via its micro USB port. Power the Blues Wireless Notecard via the micro USB port directly on the Notecarrier-AF – not the port of the ESP32 Feather. 
