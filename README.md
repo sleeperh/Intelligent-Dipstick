@@ -92,6 +92,7 @@ Depending on the manufacturer, the Dev Kit C might require the user to press and
 *	Copy and paste the following code into the code editor, replacing any existing code: 
     var specificLanguage_code = 
     {
+        {
         function Decoder(request) {
         var data = JSON.parse(request.body);
         var device = data.device;
