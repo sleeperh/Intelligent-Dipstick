@@ -79,5 +79,5 @@ Depending on the manufacturer, the Dev Kit C might require the user to press and
 ![](docs/img/Picture5.png)
 * Choose the API device type, then select New Product and provide a Product Name
 * In a separate window, go to sign into Blues Notehub and
- * choose the Project you created when setting up Notehub. 
- * Then, choose Devices from the menu on the left and copy the Device UID
+  * choose the Project you created when setting up Notehub. 
+  * Then, choose Devices from the menu on the left and copy the Device UID
