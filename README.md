@@ -17,4 +17,4 @@
 * 4 220-ohm resistors 
 * 1 MAX 6675 + K-Type Thermocouple
 
-Refer to [Capstone Gateway Diagram.pdf](docs/Diagrams/Capstone Gateway Diagram.pdf)
+Refer to [Capstone Gateway Diagram.pdf] (docs/Diagrams/Capstone Gateway Diagram.pdf)
