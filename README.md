@@ -25,14 +25,12 @@ Arduino’s IDE needs to be configured to compile its sketches appropriately for
 ** Disable any antivirus software temporarily for the next steps! **
 1.	First in the Arduino IDE, go to the File menu and choose Preferences 
 This should open a Preferences window. Within the Preferences window near the bottom, should be a text field labeled Additional Boards Manager URLs.
-Copy the next two lines into the text field and press OK.
+Copy the two URLs below into the text field and press OK. The two URLs should be separated by a comma as shown and as it appears in this text. 
 
 https://dl.espressif.com/dl/package_esp32_index.json, 
 https://raw.githubusercontent.com/espressif/arduino-esp32/gh-pages/package_esp32_index.json
 
 ![](docs/img/Picture1.jpg)
-
-The two separate URLs should be separated by a comma as shown and as it appears in this text. 
 
 2.	Next in the Arduino IDE, go to the Tools menu, choose Board, then go to Boards Manager…
 This should open the Boards Manager window. 
