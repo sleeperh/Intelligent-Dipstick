@@ -1,4 +1,6 @@
 # Intelligent Dipstick
+
+The Intelligent Dipstick is an IoT device powered by Espressif's ESP32 Dev Kit C v4, Adafruit's ESP32 Feather, and a Blues Wireless Notecard. This device is meant to be used as a dipstick for gearboxes within commercial mowers for the purpose of monitoring gearbox temperature and to listen for sounds which might indicate damage to the gearbox. 
  
 ## Getting Started
 
