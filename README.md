@@ -55,9 +55,9 @@ Follow the on-screen installation instructions
 ### Installing Arduino Libraries
 *	Go to the Arduino IDE Tools menu, then choose Manage Libraries
     *	Search for "Blues" in the input box and click the Install button next to the "Blues Wireless Notecard" result.
-    *	Search for MAX6675 and install the library by Yurri Salimov
-    *	Search for NimBLE and install the library by h2zero
-    *	Search for FFT and install the arduinoFFT library by Enrique Condes
+    *	Search for "MAX6675" and install the library by Yurri Salimov
+    *	Search for "NimBLE" and install the library by h2zero
+    *	Search for "FFT" and install the arduinoFFT library by Enrique Condes
 
 ### Uploading Arduino Programs onto the ESP32 Dev Kit C v1 and Adafruit Feather
 To install Capstone_Sensors.ino onto the ESP32 Dev Kit C:
