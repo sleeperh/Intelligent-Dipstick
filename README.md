@@ -76,8 +76,8 @@ Depending on the manufacturer, the Dev Kit C might require the user to press and
 
 5. Choose the API device type, then select New Product and provide a Product Name
 6. In a separate window, go to sign into Blues Notehub and
-  * choose the Project you created when setting up Notehub. 
-  * Then, choose Devices from the menu on the left and copy the Device UID
+    * choose the Project you created when setting up Notehub. 
+    * Then, choose Devices from the menu on the left and copy the Device UID
 ![](docs/img/Picture7.jpg)
 
 7.	Back on the Datacake device creation screen, paste your Device UID in the Serial Number field and provide a name to label the device. 
