@@ -2,11 +2,6 @@
  
 ## Getting Started
 
-### Download and Install Source Code
-1. Download the project zip and extract it in a folder of your choice. 
-2. Within the Intelligent-Dipstick-main/src folder are two subfolders: Capstone_Sensors and Capstone_Gateway. Move Capstone_Sensors and Capstone_Gateway folders to the computer's Arduino folder, typically C:\Users\YourUserName\Documents\Arduino
-3. Follow the rest of the instructions outlined below
-
 ### Parts Needed
 * 1 Blues Wireless NoteCarrier-AF with Notecard
 * 1 ESP32 Dev Kit C v4
@@ -56,6 +51,9 @@ Follow the on-screen installation instructions
     *	Search for "MAX6675" and install the library by Yurri Salimov
     *	Search for "NimBLE" and install the library by h2zero
     *	Search for "FFT" and install the arduinoFFT library by Enrique Condes
+### Download and Install Source Code
+1. Download the project zip and extract it in a folder of your choice. 
+2. Within the Intelligent-Dipstick-main/src folder are two subfolders: Capstone_Sensors and Capstone_Gateway. Move Capstone_Sensors and Capstone_Gateway folders to the computer's Arduino folder, typically C:\Users\YourUserName\Documents\Arduino
 
 ### Uploading Arduino Programs onto the ESP32 Dev Kit C v1 and Adafruit Feather
 To install Capstone_Sensors.ino onto the ESP32 Dev Kit C:
