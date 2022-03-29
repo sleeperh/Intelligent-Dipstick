@@ -2,8 +2,11 @@
 
 The Intelligent Dipstick is an IoT device powered by Espressif's ESP32 Dev Kit C v4, Adafruit's ESP32 Feather, and a Blues Wireless Notecard. This device is meant to be used as a dipstick for gearboxes within commercial mowers for the purpose of monitoring gearbox temperature and to listen for sounds which might indicate damage to the gearbox. 
  
-## Getting Started
-
+## Table of Contents
+* [Parts Needed](https://github.com/sleeperh/Intelligent-Dipstick#parts-needed)
+* [Setting Up Arduino](https://github.com/sleeperh/Intelligent-Dipstick#setting-up-arduino-ide-1819-for-ids-sensors-and-gateway)
+* [Prepare Blues Wireless Notecard](https://github.com/sleeperh/Intelligent-Dipstick#prepare-blues-wireless-notecard)
+* [Installing Arduino Libraries](https://github.com/sleeperh/Intelligent-Dipstick#prepare-blues-wireless-notecard)
 ### Parts Needed
 * 1 Blues Wireless NoteCarrier-AF with Notecard
 * 1 ESP32 Dev Kit C v4
