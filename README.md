@@ -11,7 +11,7 @@ The Intelligent Dipstick is an IoT device powered by Espressif's ESP32 Dev Kit C
 * [Upload Arduino Programs](https://github.com/sleeperh/Intelligent-Dipstick#uploading-arduino-programs-onto-the-esp32-dev-kit-c-v1-and-adafruit-feather)
 * [Routing from Notehub to Datacake](https://github.com/sleeperh/Intelligent-Dipstick#routing-from-notehub-to-datacake)
 
-### Parts Needed
+## Parts Needed
 * 1 Blues Wireless NoteCarrier-AF with Notecard
 * 1 ESP32 Dev Kit C v4
 * 1 Screw Terminal Block Breakout Board for ES32 Dev Kit C
@@ -24,7 +24,7 @@ The Intelligent Dipstick is an IoT device powered by Espressif's ESP32 Dev Kit C
 
 Refer to the [Gateway Diagram](docs/Diagrams/Capstone_Gateway_Diagram.pdf) and [Sensor Diagram](docs/Diagrams/Capstone_Sensor_Diagram.pdf) as a guide to assemble the parts. 
 
-### Setting Up Arduino IDE 1.8.19 for IDS Sensors and Gateway
+## Setting Up Arduino IDE 1.8.19 for IDS Sensors and Gateway
 Arduino’s IDE needs to be configured to compile its sketches appropriately for the ESP32.
 ** Disable any antivirus software temporarily for the next steps! **
 1.	First in the Arduino IDE, go to the File menu and choose Preferences 
@@ -49,22 +49,22 @@ Choose CP210x Universal Windows Driver from the options.
 Extract the downloaded zip file into a location of your choosing and within that folder open CP210xVCPInstaller_x64.exe (this assumes you are using a 64-bit computer, otherwise choose the …_x86 option)
 Follow the on-screen installation instructions
 
-### Prepare Blues Wireless Notecard
+## Prepare Blues Wireless Notecard
 1.	Please follow the instructions found [here](https://dev.blues.io/quickstart/notecard-quickstart/notecarrier-af/#before-you-begin) on the Blues Wireless Developer site for directions on installing the Blues Wireless Notecard onto the Blues Wireless Notecarrier-AF. 
 2.	Once the Notecarrier is assembled use the instructions found [here](https://dev.blues.io/quickstart/notecard-quickstart/notecarrier-af/#set-up-notehub) to create a Notehub Project and obtain a ProductUID. 
     *	Save the ProductUID for use later in this project. 
 
-### Installing Arduino Libraries
+## Installing Arduino Libraries
 *	Go to the Arduino IDE Tools menu, then choose Manage Libraries
     *	Search for "Blues" in the input box and click the Install button next to the "Blues Wireless Notecard" result.
     *	Search for "MAX6675" and install the library by Yurri Salimov
     *	Search for "NimBLE" and install the library by h2zero
     *	Search for "FFT" and install the arduinoFFT library by Enrique Condes
-### Download and Install Source Code
+## Download and Install Source Code
 1. Download the project zip and extract it in a folder of your choice. 
 2. Within the Intelligent-Dipstick-main/src folder are two subfolders: Capstone_Sensors and Capstone_Gateway. Move Capstone_Sensors and Capstone_Gateway folders to the computer's Arduino folder, typically C:\Users\YourUserName\Documents\Arduino
 
-### Uploading Arduino Programs onto the ESP32 Dev Kit C v1 and Adafruit Feather
+## Uploading Arduino Programs onto the ESP32 Dev Kit C v1 and Adafruit Feather
 To install Capstone_Sensors.ino onto the ESP32 Dev Kit C:
 1.	Connect the Dev Kit C to a USB port via micro-USB connector
 2.	Open Capstone_Sensors.ino in Arduino IDE
@@ -75,7 +75,7 @@ To install Capstone_Sensors.ino onto the ESP32 Dev Kit C:
 Depending on the manufacturer, the Dev Kit C might require the user to press and hold the Boot button on the ESP32 board while Arduino IDE tries to connect to it. Release boot button when uploading proceeds.  
 ![](docs/img/Picture3.jpg) ![](docs/img/Picture4.jpg)
 
-### Routing from Notehub to Datacake
+## Routing from Notehub to Datacake
 1. Create a [Datacake](https://app.datacake.de/signup) account
 2. After creating an account, you should be redirected to your workspace. If you do not get redirected, go to [Datacake](https://datacake.co/)’s main site and click on the Dashboard button at the top right hand corner of the webpage. 
 3. Sign into the dashboard using your newly created credentials 
