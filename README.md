@@ -97,34 +97,45 @@ To install Capstone_Sensors.ino onto the ESP32 Dev Kit C:
 12.	Navigate back up the page to the HTTP Payload Decoder section. 
 13.	Copy and paste the following code into the code editor, replacing any existing code: 
        
-        function Decoder(request) 
-        {
-            var data = JSON.parse(request.body);
-            var device = data.device;
+        function Decoder(request) {
+        var data = JSON.parse(request.body);
+        var device = data.device;
 
-            var decoded = {};
-            decoded.temp1 = data.body.temp1;
-            decoded.sound = data.body.sound;
-            decoded.time = data.when;
+        var decoded = {};
+        decoded.temp1 = data.body.temp1;
+        decoded.sound = data.body.numSound;
+        decoded.boolSound = data.body.sound
+        decoded.error = data.body.error;
+        decoded.time = data.when;
 
-            return [
-                {
-                    device: device,
-                    field: "TEMP_1",
-                    value:decoded.temp1
-                },
-                {
-                    device: device,
-                    field: "SOUND",
-                    value:decoded.sound
-                },
-                {
-                    device: device,
-                    field: "TIME",
-                    value: decoded.time
-                }
-            ];
-        } 
+        return [
+            {
+                device: device,
+                field: "TEMP_1",
+                value:decoded.temp1
+            },
+            {
+                device: device,
+                field: "SOUND",
+                value:decoded.sound
+            },
+            {
+                device: device,
+                field: "BOOLSOUND",
+                value:decoded.boolSound
+            },
+            {
+                device: device,
+                field: "ERROR",
+                value:decoded.error
+            },
+            {
+                device: device,
+                field: "TIME",
+                value: decoded.time
+            }
+        ];
+    }
 
 14.	Navigate to the HTTP Endpoint URL and copy it
 15.	Back in Notehub, click on Routes in your Projects menu to the left and then click Create Route on the top right corner of the webpage. 
