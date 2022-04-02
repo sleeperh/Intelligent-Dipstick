@@ -93,7 +93,7 @@ To install Capstone_Sensors.ino onto the ESP32 Dev Kit C:
 8.	Choose the free plan, you can upgrade later
 9.	Once you have created your Datacake device, you should be redirected to an overview of your Datacake devices. Click on the newly created device and open the device view. 
 10.	Choose the Configuration tab to configure the device 
-11.	Look for the Fields section and click on Add Fields. This will allow you to  create numerous database fields to hold data that comes from Notehub. Add one called Temp 1 with Identifier TEMP_1 type Float; Time, with Identifier TIME type Float; Error with Identifier ERROR type Boolean; boolSound with Identifier BOOLSOUND type Boolean; and, Sound, with Identifier SOUND type Integer.
+11.	Look for the Fields section and click on Add Fields. This will allow you to  create numerous database fields to hold data that comes from Notehub. Add one called Temp 1, with Identifier TEMP_1 type: Float; Time, with Identifier TIME type: Float; Error, with Identifier ERROR type: Boolean; boolSound, with Identifier BOOLSOUND type: Boolean; and, Sound, with Identifier SOUND type: Integer.
 12.	Navigate back up the page to the HTTP Payload Decoder section. 
 13.	Copy and paste the following code into the code editor, replacing any existing code: 
        
