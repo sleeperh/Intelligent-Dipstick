@@ -70,10 +70,10 @@ To install Capstone_Sensors.ino onto the ESP32 Dev Kit C:
 2.	Open Capstone_Sensors.ino in Arduino IDE
 3.	Navigate to the Tools menu in Arduino IDE, then choose Port and select the appropriate serial port associated with the newly connected Dev Kit C
 4.	Within the Tools menu, choose Board menu, select ESP Arduino, and from that menu choose “ESP32 Dev Module” 
-5.	 Navigate to the Sketch menu in Arduino IDE and select the Upload option (alternatively press Ctrl+U). The program will compile and upload onto the ESP32 board. 
+5.	Navigate to the Sketch menu in Arduino IDE and select the Upload option (alternatively press Ctrl+U). The program will compile and upload onto the ESP32 board. 
+    * Depending on the manufacturer, the Dev Kit C might require the user to press and hold the Boot button on the ESP32 board while Arduino IDE tries to connect to it. Release boot button when uploading proceeds.  
 
-Depending on the manufacturer, the Dev Kit C might require the user to press and hold the Boot button on the ESP32 board while Arduino IDE tries to connect to it. Release boot button when uploading proceeds.  
-![](docs/img/Picture3.jpg) ![](docs/img/Picture4.jpg)
+     ![](docs/img/Picture3.jpg) ![](docs/img/Picture4.jpg)
 
 ## Routing from Notehub to Datacake
 1. Create a [Datacake](https://app.datacake.de/signup) account
@@ -93,7 +93,7 @@ Depending on the manufacturer, the Dev Kit C might require the user to press and
 8.	Choose the free plan, you can upgrade later
 9.	Once you have created your Datacake device, you should be redirected to an overview of your Datacake devices. Click on the newly created device and open the device view. 
 10.	Choose the Configuration tab to configure the device 
-11.	Look for the Fields section and click on Add Fields. This will allow you to  create numerous database fields to hold data that comes from Notehub. Add one called Temp 1 with Identifier TEMP_1; Time, with Identifier TIME; and, Sound, with Identifier SOUND. All fields should be of type Float. 
+11.	Look for the Fields section and click on Add Fields. This will allow you to  create numerous database fields to hold data that comes from Notehub. Add one called Temp 1, with Identifier TEMP_1 type: Float; Time, with Identifier TIME type: Float; Error, with Identifier ERROR type: Boolean; boolSound, with Identifier BOOLSOUND type: Boolean; and, Sound, with Identifier SOUND type: Integer.
 12.	Navigate back up the page to the HTTP Payload Decoder section. 
 13.	Copy and paste the following code into the code editor, replacing any existing code: 
        
@@ -104,7 +104,9 @@ Depending on the manufacturer, the Dev Kit C might require the user to press and
 
             var decoded = {};
             decoded.temp1 = data.body.temp1;
-            decoded.sound = data.body.sound;
+            decoded.sound = data.body.numSound;
+            decoded.boolSound = data.body.sound
+            decoded.error = data.body.error;
             decoded.time = data.when;
 
             return [
@@ -120,11 +122,21 @@ Depending on the manufacturer, the Dev Kit C might require the user to press and
                 },
                 {
                     device: device,
+                    field: "BOOLSOUND",
+                    value:decoded.boolSound
+                },
+                {
+                    device: device,
+                    field: "ERROR",
+                    value:decoded.error
+                },
+                {
+                    device: device,
                     field: "TIME",
                     value: decoded.time
                 }
             ];
-        } 
+        }
 
 14.	Navigate to the HTTP Endpoint URL and copy it
 15.	Back in Notehub, click on Routes in your Projects menu to the left and then click Create Route on the top right corner of the webpage. 
