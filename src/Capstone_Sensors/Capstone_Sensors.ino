@@ -36,8 +36,8 @@ unsigned long newTime;
 int readingsInSecs = 20; // interval in seconds at which temperature data is sent to Gateway
 int interval = readingsInSecs * 1000;
 int soundInterval = 10; // interval in ms at which the sound is checked via FFT
-unsigned long previousMillis = 0;
-
+unsigned long previousMillisT = 0;
+unsigned long previousMillisS = 0;
 // Sensors
 Thermocouple* thermocouple;
 String temp;
@@ -200,7 +200,7 @@ void loop()
             if(pChr) // connected to the characteristic?
             {
                 unsigned long currentMillis = millis();
-                if(currentMillis - previousMillis >= soundInterval) 
+                if(currentMillis - previousMillisS >= soundInterval) 
                 {
                     pingNoise = SoundFFT();
                     String noiseAlert = "Sound: ";
@@ -216,10 +216,12 @@ void loop()
                         pChr->notify(true);
                         digitalWrite(greenLEDPin, HIGH);
                         digitalWrite(redLEDPin, LOW);
+                        previousMillisS = currentMillis;
                     }
+                    
                 }
 
-                if(currentMillis - previousMillis >= interval) 
+                if(currentMillis - previousMillisT >= interval) 
                 {
                     // Indicate data being sent
                     digitalWrite(greenLEDPin, LOW);
@@ -258,7 +260,7 @@ void loop()
                     delay(500);
                     digitalWrite(greenLEDPin, HIGH);
                     digitalWrite(redLEDPin, LOW);
-                    previousMillis = currentMillis; // reset timer
+                    previousMillisT = currentMillis; // reset timer
                 }
             }
         }
