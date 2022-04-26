@@ -257,7 +257,7 @@ void loop()
                     pChr->setValue(bufT); // set value to temperature reading for notification
                     pChr->notify(true); // notify client of new temperature data
                     // Indicate completed action
-                    delay(500);
+                    //delay(500);
                     digitalWrite(greenLEDPin, HIGH);
                     digitalWrite(redLEDPin, LOW);
                     previousMillisT = currentMillis; // reset timer
