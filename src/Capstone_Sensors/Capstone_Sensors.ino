@@ -218,7 +218,15 @@ void loop()
                         digitalWrite(redLEDPin, LOW);
                         previousMillisS = currentMillis;
                     }
-                    
+                    else if(pingNoise == "nan")
+                    {
+                        String ErrorAlrt = "Error: 1";
+                        Serial.println(ErrorAlrt);
+                        char bufE[20];
+                        ErrorAlrt.toCharArray(bufE, 14);
+                        pChr->setValue(bufE);
+                        pChr->notify(true);
+                    }
                 }
 
                 if(currentMillis - previousMillisT >= interval) 
