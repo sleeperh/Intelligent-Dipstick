@@ -5,7 +5,7 @@
 
 Notecard notecard;
 
-#define productUID "com.gmail.harold.sleeper:eithermo"
+#define productUID "com.email.firstName.lastName:project" // Your Blues Wireless product UID goes here
 
 void scanEndedCB(NimBLEScanResults results);
 
