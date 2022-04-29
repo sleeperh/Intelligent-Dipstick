@@ -138,23 +138,60 @@ To install Capstone_Sensors.ino onto the ESP32 Dev Kit C:
             ];
         }
 
-14.	Navigate to the HTTP Endpoint URL and copy it
+14.	Navigate to the HTTP Endpoint URL and copy it.
 15.	Back in Notehub, click on Routes in your Projects menu to the left and then click Create Route on the top right corner of the webpage. 
-16.	Select the General HTTP/HTTPS Request/Response route type
-17.	Provide a name for the route and paste the HTTP Endpoint URL for the URL
+16.	Select the General HTTP/HTTPS Request/Response route type.
+17.	Provide a name for the route and paste the HTTP Endpoint URL for the URL.
 18.	In the Notefiles dropdown, choose Select Notefiles and choose sensors.qo
-19.	Then, click Create Route to save the route
+19.	Then, click Create Route to save the route.
 20.	Back in Datacake, choose Devices from the menu on the right and select your device from the list in the center of the screen. 
-21.	Go to the Dashboard tab and click the toggle button to enable editing for your dashboard
-22.	Click Add Widget
+21.	Go to the Dashboard tab and click the toggle button to enable editing for your dashboard.
+
+## Create Datacake Widgets
+### Create Temperature Chart Widget
+1.	Click Add Widget.
 
 ![](docs/img/Picture8.png)
 
-23.	Choose Chart from the list and create a Title in the Basic tab. 
-24.	Within the Data tab, click Add Field and choose Temp 1 from the Field drop down and then click the Save button
-25.	Click Add Widget again and choose Value 
-26.	Select Current Value in the Timeframe tab
-27.	Within the Basics tab, create a title for the widget such as Temperature Chart
-28.	Within the Data tab, select Temp 1 from the Field drop down and click Save
+2.	Choose Chart from the list and create a Title in the Basic tab. 
+3.	Within the Data tab, click Add Field and choose Temp 1 from the Field drop down and then click the Save button.
+4.	Click Add Widget again and choose Value. 
+5.	Select Current Value in the Timeframe tab.
+6.	Within the Basics tab, create a title for the widget such as Temperature Chart.
+7.	Within the Data tab, select Temp 1 from the Field drop down and click Save.
+### Create Current Temperature Widget
+1. Click Add Widget.
+2. Choose Value from the list and create a Title in the Basic tab. 
+3. Within the Data tab, select Temp 1 in the Field drop down menu, enter F as a Unit.
+4. In the Gauge tab, select circular as the Gauge Type. Enter 0, 70, 220, and 440 as Values and select an appropriate color for each. 
+5. In the Timeframe tab, make sure Current Value is selected. 
+6. Click Save.
+### Create Sound Boolean Widget
+1. Click Add Widget.
+2. Choose Boolean from the list and create a Title in the Basics tab
+3. In the Data tab, choose boolSound in the Field textbox
+4. In the Appearance tab, enter Sound Detected in the Display On Text text box
+5. Inside the Display Off Text text box, enter No Sound Detected
+6. Toggle on the Widget color based on state toggle
+7. Choose an appropriate color for the on and off states and click Save
+### Create Sound History Widget
+1. Click Add Widget.
+2. Choose Chart from the list
+3. In the Basic tab, Enter Sound History as a Title
+4. In the Data tab, select Sound in the Field dropdown and select Bar Chart
+5. In the Axes tab, toggle on Hide Axis 
+6. Within the Timeframe tab, choose Custom
+7. In the From field, type in 1 Hour Ago
+8. In the Until field, enter Now
+9. In the Resolution field, enter 1 and select minutes in the drop down menu
+10. Click Save
+### Create Error Widget
+1. Choose Boolean from the list and create a Title in the Basics tab
+2. In the Data tab, choose Error from the field drop down menu
+3. In the Appearance tab, Enter Hardware Failure Detected as the Display On Text
+4. Enter No Hardware Issues as the Display Off Text
+5. Choose Red for the Display On Color
+6. Choose Green for the Display Off Color
+7. Click Save
 
 Now the setup should be complete. Find a good power source and power the ESP Dev Kit C via its micro USB port. Power the Blues Wireless Notecard via the micro USB port directly on the Notecarrier-AF – not the port of the ESP32 Feather. 
