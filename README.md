@@ -11,7 +11,7 @@ The Intelligent Dipstick is an IoT device powered by Espressif's ESP32 Dev Kit C
 * [Upload Arduino Programs](https://github.com/sleeperh/Intelligent-Dipstick#uploading-arduino-programs-onto-the-esp32-dev-kit-c-v1-and-adafruit-feather)
 * [Routing from Notehub to Datacake](https://github.com/sleeperh/Intelligent-Dipstick#routing-from-notehub-to-datacake)
 * [Create Datacake Widgets](https://github.com/sleeperh/Intelligent-Dipstick/blob/main/README.md#create-datacake-widgets)
-    *  
+
 ## Parts Needed
 * 1 Blues Wireless NoteCarrier-AF with Notecard
 * 1 ESP32 Dev Kit C v4
