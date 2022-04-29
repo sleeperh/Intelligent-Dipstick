@@ -12,6 +12,11 @@ The Intelligent Dipstick is an IoT device powered by Espressif's ESP32 Dev Kit C
 * [Routing from Notehub to Datacake](https://github.com/sleeperh/Intelligent-Dipstick#routing-from-notehub-to-datacake)
 * [Create Datacake Widgets](https://github.com/sleeperh/Intelligent-Dipstick/blob/main/README.md#create-datacake-widgets)
     * [Create Temperature Chart Widget](https://github.com/sleeperh/Intelligent-Dipstick/blob/main/README.md#create-temperature-chart-widget)
+    * [Create Current Temperature Widget](https://github.com/sleeperh/Intelligent-Dipstick/blob/main/README.md#create-current-temperature-widget)
+    * [Create Sound Boolean Widget](https://github.com/sleeperh/Intelligent-Dipstick/blob/main/README.md#create-sound-boolean-widget)
+    * [Create Sound History Widget](https://github.com/sleeperh/Intelligent-Dipstick/blob/main/README.md#create-sound-history-widget)
+    * [Create Error Widget](https://github.com/sleeperh/Intelligent-Dipstick/blob/main/README.md#create-error-widget)
+ 
 ## Parts Needed
 * 1 Blues Wireless NoteCarrier-AF with Notecard
 * 1 ESP32 Dev Kit C v4
